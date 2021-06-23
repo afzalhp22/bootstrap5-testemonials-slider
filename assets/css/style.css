@@ -1,0 +1,113 @@
+/* Testimonial Slider Css */
+.is-box-shadow {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+.client-information {
+    position: relative;
+}
+
+
+.client-information::after {
+    right: -34px;
+    top: -13px;
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(http://localhost/virtual/wp-content/uploads/2021/04/dotted-shape-1.png);
+    width: 288px;
+    height: 237px;
+    z-index: -1;
+}
+
+.client-information::before {
+    left: -34px;
+    bottom: -13px;
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(http://localhost/virtual/wp-content/uploads/2021/04/dotted-shape-1.png);
+    width: 288px;
+    height: 237px;
+    z-index: -1;
+}
+
+.client-img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.client-img::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/small-qoute.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+}
+
+.client-says {
+    background-image: url(http://localhost/virtual/wp-content/uploads/2021/04/qoute-icon.png);
+    background-repeat: no-repeat;
+    background-position: right 100px center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #576379;
+    z-index: 10;
+    padding: 0 18%;
+}
+
+.client-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+/* slick arrows 
+.testimonial-active .slick-prev::before {
+    content: "\f053" !important; 
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 700;
+    color: #0f86f2 !important;
+}
+.testimonial-active .slick-next::before {
+    content: "\f054" !important; 
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 700;
+    color: #0f86f2 !important;
+}
+.testimonial-active .slick-prev {
+    left: 58px !important;
+    z-index: 10;
+}
+.testimonial-active .slick-next {
+    right: 58px !important;
+}
+*/
+.testimonial-active button {
+    border: none;
+    background: none;
+}
+
+.testimonial-active .slick-prev {
+    position: absolute;
+    top: 49%;
+    left: 70px;
+    z-index: 10;
+    color: #0f86f2;
+}
+
+.testimonial-active .slick-next {
+    position: absolute;
+    top: 49%;
+    right: 70px;
+    z-index: 10;
+    color: #0f86f2;
+}
